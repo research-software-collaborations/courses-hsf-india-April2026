@@ -1,4 +1,4 @@
-FROM mambaorg/micromamba:2.5.0-2
+FROM mambaorg/micromamba:2.5.0
 
 ENV SHELL /bin/bash
 ARG NEW_MAMBA_USER=jovyan
