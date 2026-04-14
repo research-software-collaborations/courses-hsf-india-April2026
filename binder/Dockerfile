@@ -46,8 +46,8 @@ USER root
 #clean up after conda
 RUN rm -rf /opt/conda/pkgs
 
-#RUN ln=`grep -n "exec " /usr/local/bin/_entrypoint.sh | tail -1 | cut -f1 -d:`; \
-#    sed -i "${ln}igit clone --recurse-submodules https://github.com/research-software-collaborations/courses-hsf-india-Jan2026" /usr/local/bin/_entrypoint.sh
+RUN ln=`grep -n "exec " /usr/local/bin/_entrypoint.sh | tail -1 | cut -f1 -d:`; \
+    sed -i "${ln}igit clone --recurse-submodules https://github.com/research-software-collaborations/courses-hsf-india-April2026" /usr/local/bin/_entrypoint.sh
 
 ## remove the news
 COPY binder/overrides.json /tmp
