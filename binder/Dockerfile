@@ -50,9 +50,9 @@ RUN rm -rf /opt/conda/pkgs
 #    sed -i "${ln}igit clone --recurse-submodules https://github.com/research-software-collaborations/courses-hsf-india-Jan2026" /usr/local/bin/_entrypoint.sh
 
 ## remove the news
-#COPY binder/overrides.json /tmp
-#RUN mkdir -p /opt/conda/share/jupyter/lab/settings; \
-#      cp /tmp/overrides.json /opt/conda/share/jupyter/lab/settings    
+COPY binder/overrides.json /tmp
+RUN mkdir -p /opt/conda/share/jupyter/lab/settings; \
+      cp /tmp/overrides.json /opt/conda/share/jupyter/lab/settings    
 
 USER $MAMBA_USER
 WORKDIR /home/jovyan
