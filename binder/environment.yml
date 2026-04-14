@@ -1,36 +1,52 @@
-name: hsf-india-ml
+name: hsf-india-python
 channels:
-  - nvidia/label/cuda-12.9
   - conda-forge
 dependencies:
   - python=3.12
+  - aiohttp
+  - astunparse
+  - awkward
   - bash_kernel
-  - grpcio
-  - numpy<2
-  - pandas
-  - scipy
-  - hdf5
+  - clang-tools
+  - cxx-compiler
+  - pympler
+  - jax
+  - optax
+  - equinox
+  - hepunits
+  - hist
+  - ipympl
+  - jupyterlab-deck
+  - jupyterlab-mathjax3
   - lz4
   - matplotlib
-  #- numba
+  - numba
   - openssh
   - pandas
+  - particle
+  - pint
   - pip
+  - polars
+  - pyarrow
+  - pybind11
+  - pyhf
+  - pyshp
+  - py-spy
+  - requests
   - scikit-learn
+  - servicex
+  - uproot
+  - vector
+  - vim
+  - dask
+  - distributed
+  - dask-awkward
+  - graphviz
+  - python-graphviz
+  - flax
   - pip:
       - h5py
-      - tensorboard
-      - tensorflow[and-cuda] 
-      ##- tensorrt
-      - torch
-      - torch-geometric
-      - torchvision
-      #- tqdm
-      - jax[cuda12]
-      - nvidia-cudnn-cu12
-      - xgboost
-
-
+  
 
 variables:
   LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
