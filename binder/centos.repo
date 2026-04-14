@@ -1,0 +1,36 @@
+[C7.9.2009-base]
+name=Vault - CentOS-$releasever - Base
+baseurl=http://vault.centos.org/centos/$releasever/os/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-$releasever
+enabled=1
+
+[C7.9.2009-updates]
+name=Vault - CentOS-$releasever - Updates
+baseurl=http://vault.centos.org/centos/$releasever/updates/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-$releasever
+enabled=1
+
+[C7.9.2009-extras]
+name=Vault - CentOS-$releasever – Extras
+baseurl=http://vault.centos.org/centos/$releasever/extras/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-$releasever
+enabled=1
+
+[epel]
+name=Vault Extra Packages for Enterprise Linux 7 - $basearch
+baseurl=https://archives.fedoraproject.org/pub/archive/epel/7/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+metadata_expire=never
+
+[centos-sclo-SCLGROUP]
+name=CentOS-$releasever - SCLo SCLGROUP
+baseurl=https://vault.centos.org/centos/$releasever/sclo/$basearch/sclo
+# mirrorlist=https://vault.centos.org?arch=$basearch&release=$releasever&repo=sclo-SCLGROUP
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
