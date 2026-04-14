@@ -1,0 +1,19 @@
+name: hsf-india
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - ipykernel
+  - fsspec-xrootd
+  - xrootd
+  - openssh
+  - notebook 
+  - jupyterlab
+  - pip:
+    - matplotlib
+    # force an old version..
+    - contourpy==1.0.7
+    - numpy<2.0
+    #- jupyter-remote-desktop-proxy
+    - bash_kernel
