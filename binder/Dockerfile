@@ -1,4 +1,9 @@
-FROM nvcr.io/nvidia/nvhpc:26.3-devel-cuda13.1-ubuntu24.04
+FROM nvcr.io/nvidia/nvhpc:26.3-devel-cuda13.1-ubuntu22.04
+#moving to ubuntu 24.xx requires a different way of installing python packages...
+#To install Python packages system-wide, try apt install
+#python3-xyz, where xyz is the package you are trying to
+#install.
+#I have not tried this
 
 RUN apt-get update -y
 RUN apt-get install -y git pip wget
