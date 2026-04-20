@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/nvhpc:25.5-devel-cuda12.9-ubuntu22.04
+FROM nvcr.io/nvidia/nvhpc:25.5-devel-cuda13.1-ubuntu22.04
 
 RUN apt-get update -y
 RUN apt-get install -y git pip wget
