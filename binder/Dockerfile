@@ -29,8 +29,8 @@ RUN ln=`grep -n "exec " /usr/local/bin/entrypoint.sh | tail -1 | cut -f1 -d:`; \
 
 ## remove the news
 COPY binder/overrides.json /tmp
-#RUN mkdir -p /opt/conda/share/jupyter/lab/settings; \
-#      cp /tmp/overrides.json /opt/conda/share/jupyter/lab/settings    
+RUN mkdir -p /opt/conda/share/jupyter/lab/settings; \
+      cp /tmp/overrides.json /opt/conda/share/jupyter/lab/settings    
 
 WORKDIR ${HOME}
 USER ${USER}
