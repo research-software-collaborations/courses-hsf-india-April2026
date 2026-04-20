@@ -1,6 +1,6 @@
 name: hsf-india-ml
 channels:
-  - nvidia/label/cuda-12.9
+  - nvidia/label/cuda-13.1
   - conda-forge
 dependencies:
   - python=3.12
