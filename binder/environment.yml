@@ -10,6 +10,7 @@ dependencies:
   - openssh
   - notebook 
   - jupyterlab
+  - xorg-libxaw
   - pip:
     - matplotlib
     # force an old version..
