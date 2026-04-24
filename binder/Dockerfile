@@ -86,6 +86,13 @@ RUN . /opt/conda/etc/profile.d/conda.sh; \
 
 RUN rm -rf /opt/conda/pkgs
 
+#install autocutsel
+RUN wget https://github.com/sigmike/autocutsel/releases/download/0.10.1/autocutsel-0.10.1.tar.gz && \
+    tar xfz autocutsel-0.10.1.tar.gz && \
+    cd autocutsel-0.10.1 && \
+    ./configure --prefix /home/jovyan/autocutsel && \
+    make && make install
+
 RUN mkdir Desktop && \
     echo "[Desktop Entry]" > Desktop/test.app && \
     echo "Version=1.0" >> Desktop/test.app && \
