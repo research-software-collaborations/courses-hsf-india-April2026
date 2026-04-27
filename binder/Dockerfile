@@ -85,7 +85,7 @@ RUN . /opt/conda/etc/profile.d/conda.sh; \
 #    echo "conda activate hsf-india" >> ~/.bashrc
 
 RUN rm -rf /opt/conda/pkgs
-RUN cd /opt/conda && ls && cd /opt/conda/share && ls && cd /opt/conda/share/jupyter && ls
+RUN cd /opt/conda && ls && cd /opt/conda/share && ls && cd /opt/conda/share/jupyter && ls && \
     cd /opt/conda/share/jupyter/kernels/ && \ 
     cp -r python3 dune_python && \
     sed -i  's/\/opt\/conda\/bin\/python/\/cvmfs\/larsoft.opensciencegrid.org\/products\/python\/v3_9_15\/Linux64bit+3.10-2.17\/bin\/python/' dune_python/kernel.json && \
