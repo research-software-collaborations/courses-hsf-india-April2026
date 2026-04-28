@@ -11,9 +11,9 @@ unset __conda_setup
 conda activate "${_CONDA_DEFAULT_ENV}"
 
 #lets try adding another kernel
-source /cvmfs/dune.opensciencegrid.org/products/dune/setup_dune.sh
-setup dunesw v10_13_00d00 -q e26:prof
-python -m ipykernel install --name py-dune
+#source /cvmfs/dune.opensciencegrid.org/products/dune/setup_dune.sh
+#setup dunesw v10_13_00d00 -q e26:prof
+#python -m ipykernel install --name py-dune
 
 conda activate "${_CONDA_DEFAULT_ENV}"
 
