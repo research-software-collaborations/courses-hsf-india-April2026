@@ -88,9 +88,9 @@ RUN rm -rf /opt/conda/pkgs
 
 RUN cd /opt/conda/envs/hsf-india/share/jupyter/kernels/ && \ 
     cp -r python3 dune_python && \
-    sed -i  's/\/opt\/conda\/bin\/python/\/cvmfs\/larsoft.opensciencegrid.org\/products\/python\/v3_9_15\/Linux64bit+3.10-2.17\/bin\/python/' dune_python/kernel.json && \
+    sed -i  's/\/opt\/conda\/envs\/hsf-india\/bin\/python/\/cvmfs\/larsoft.opensciencegrid.org\/products\/python\/v3_9_15\/Linux64bit+3.10-2.17\/bin\/python/' dune_python/kernel.json && \
     sed -i 's/Python 3 (ipykernel)/Python 3 (Dune)/' dune_python/kernel.json
-
+#/opt/conda/envs/hsf-india/bin/python
 
 RUN mkdir Desktop && \
     echo "[Desktop Entry]" > Desktop/test.app && \
