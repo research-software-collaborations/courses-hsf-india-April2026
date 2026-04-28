@@ -4,3 +4,6 @@
 [submodule "HSF-India-Hyderabad-2026-ShellAndGit"]
 	path = HSF-India-Hyderabad-2026-ShellAndGit
 	url = ../../pfackeldey/HSF-India-Hyderabad-2026-ShellAndGit.git
+[submodule "intro_ml_workshop"]
+	path = intro_ml_workshop
+	url = ../../abhi-mal/intro_ml_workshop.git
