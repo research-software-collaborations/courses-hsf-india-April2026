@@ -11,10 +11,11 @@ unset __conda_setup
 conda activate "${_CONDA_DEFAULT_ENV}"
 
 #lets try adding another kernel
-cd /opt/conda/share/jupyter/kernels/ 
-cp -r python3 dune_python 
-sed -i  's/\/opt\/conda\/bin\/python/\/cvmfs\/larsoft.opensciencegrid.org\/products\/python\/v3_9_15\/Linux64bit+3.10-2.17\/bin\/python/' dune_python/kernel.json
-sed -i 's/Python 3 (ipykernel)/Python 3 (Dune)/' kernel.json
+source /cvmfs/dune.opensciencegrid.org/products/dune/setup_dune.sh
+setup dunesw v10_13_00d00 -q e26:prof
+python -m ipykernel install --name py-dune
+
+conda activate "${_CONDA_DEFAULT_ENV}"
 
 git clone --recurse-submodules https://github.com/research-software-collaborations/courses-hsf-india-April2026
 
