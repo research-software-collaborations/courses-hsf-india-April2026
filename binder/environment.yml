@@ -17,6 +17,11 @@ dependencies:
   - pandas
   - pip
   - scikit-learn
+  - transformers 
+  - peft 
+  - bitsandbytes 
+  - trl 
+  - datasets
   - pip:
       - h5py
       - tensorboard
@@ -29,11 +34,7 @@ dependencies:
       - jax[cuda12]
       - nvidia-cudnn-cu12
       - xgboost
-      - transformers 
-      - peft 
-      - bitsandbytes 
-      - trl 
-      - datasets
+  
 
 
 
