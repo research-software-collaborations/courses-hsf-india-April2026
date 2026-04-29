@@ -22,7 +22,7 @@ dependencies:
   - bitsandbytes 
   - trl 
   - datasets
-  - torch
+  - pytorch
   - torch-geometric
   - torchvision
   - pip:
