@@ -25,7 +25,6 @@ dependencies:
   - pytorch
   - torch-geometric
   - torchvision
-  - omnilearned
   - pip:
       - h5py
       - tensorboard
@@ -35,6 +34,8 @@ dependencies:
       - jax[cuda12]
       - nvidia-cudnn-cu12
       - xgboost
+      - omnilearned
+  
   
 
 
