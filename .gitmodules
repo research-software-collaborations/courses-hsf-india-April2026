@@ -7,3 +7,9 @@
 [submodule "intro_ml_workshop"]
 	path = intro_ml_workshop
 	url = ../../abhi-mal/intro_ml_workshop.git
+[submodule "llm_sft"]
+	path = llm_sft
+	url = ../../abhi-mal/llm_sft.git
+[submodule "FoundationModelsHackathon"]
+	path = FoundationModelsHackathon
+	url = ../../abhi-mal/FoundationModelsHackathon
