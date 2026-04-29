@@ -25,6 +25,7 @@ dependencies:
   - pytorch
   - torch-geometric
   - torchvision
+  - omnilearned
   - pip:
       - h5py
       - tensorboard
