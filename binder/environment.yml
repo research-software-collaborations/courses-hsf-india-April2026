@@ -29,6 +29,11 @@ dependencies:
       - jax[cuda12]
       - nvidia-cudnn-cu12
       - xgboost
+      - transformers 
+      - peft 
+      - bitsandbytes 
+      - trl 
+      - datasets
 
 
 
