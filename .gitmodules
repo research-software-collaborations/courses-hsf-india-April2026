@@ -13,3 +13,6 @@
 [submodule "FoundationModelsHackathon"]
 	path = FoundationModelsHackathon
 	url = ../../abhi-mal/FoundationModelsHackathon
+[submodule "tutorial-DUNENDSim"]
+	path = tutorial-DUNENDSim
+	url = https://github.com/alexbooth92/tutorial-DUNENDSim
