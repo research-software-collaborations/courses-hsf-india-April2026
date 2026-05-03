@@ -17,18 +17,26 @@ dependencies:
   - pandas
   - pip
   - scikit-learn
+  - transformers 
+  - peft 
+  - bitsandbytes 
+  - trl 
+  - datasets
+  - pytorch
+  - torch-geometric
+  - torchvision
   - pip:
       - h5py
       - tensorboard
       - tensorflow[and-cuda] 
       ##- tensorrt
-      - torch
-      - torch-geometric
-      - torchvision
       #- tqdm
       - jax[cuda12]
       - nvidia-cudnn-cu12
       - xgboost
+      - omnilearned
+  
+  
 
 
 
